@@ -159,6 +159,7 @@
       });
     }
     function youtube(){
+      console.log('bella di youtube');
       //YouTube API V3
       $.ajax({
         url: 'https://www.googleapis.com/youtube/v3/channels',
