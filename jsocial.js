@@ -175,7 +175,7 @@
           var subscribers = parseInt(data.items[0].statistics.subscriberCount);
           var k = kFormatter(subscribers);
           $('#wrapper .item.youtube .count').append(k);
-          $('#wrapper .item.youtube').attr('href','https://youtube.com/'+settings.youtube_user);
+          $('#wrapper .item.youtube').attr('href','https://youtube.com/channel/'+settings.youtube_user);
           getTotal(subscribers);
         }
       });
