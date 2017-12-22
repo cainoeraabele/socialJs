@@ -165,7 +165,7 @@
         dataType: 'jsonp',
         type: 'GET',
         data:{
-          part:'statistics',
+          part:'id',
           forUsername:settings.youtube_user,
           key: settings.youtube_key
         },
