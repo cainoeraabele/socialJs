@@ -166,11 +166,12 @@
         dataType: 'jsonp',
         type: 'GET',
         data:{
-          part:'id',
-          forUsername:settings.youtube_user,
+          part:'statistics',
+          id:settings.youtube_user,
           key: settings.youtube_key
         },
         success: function(data) {
+          console.log(data);
           var subscribers = parseInt(data.items[0].statistics.subscriberCount);
           var k = kFormatter(subscribers);
           $('#wrapper .item.youtube .count').append(k);
