@@ -401,7 +401,7 @@
         return (num/1000).toFixed(1) + 'k';
       }
       if(num > 1000000 ){
-        return (num/1000000) + 'M';
+        return (num/1000000).toFixed(3) + 'M';
       }
       else{
         return num
