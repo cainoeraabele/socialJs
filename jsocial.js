@@ -397,7 +397,17 @@
     }
     //Function to add K to thousands
     function kFormatter(num) {
-      return num > 999 ? (num/1000).toFixed(1) + 'k' : num;
+      if (num > 999 && num < 1000000 ){
+        return (num/1000).toFixed(1) + 'k';
+      }
+      if(num > 1000000 ){
+        return (num/1000000) + 'M';
+      }
+      else{
+        return num
+      }
+
+
     }
     //Total Counter
     var total = 0;
